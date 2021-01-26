@@ -53,7 +53,7 @@ main()
         salary_tax = salary_pure - tax + mo3awana;
         printf("Your salary without tax is %.1f\n",salary_pure + mo3awana);
         printf("Your salary with tax is %.1f & your tax is %.1f\n",salary_tax,tax);
-    }*/
+    }
 
 
                                                                         //==== exercice_2
