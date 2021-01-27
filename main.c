@@ -95,7 +95,46 @@ main()
     }
     
     
-    
+                                                                          //EX_3
+
+
+            char num_char;
+            char answer = 'y';
+            char t1[10],t2[10];
+            printf("Hello Dear\n");
+            int i = 0,j = 0;
+            do{
+                printf("Please enter the character OR number : ");
+                scanf("%c",&num_char);
+                getchar();
+                if(isdigit(num_char)){
+                 t1[i]= num_char;
+                 i++;
+                }
+                else if(isalpha(num_char)){
+                    t2[j]= num_char;
+                    j++;
+                }
+                printf("do you want to complete ?! Y/N : ");
+                scanf("%c",&answer);
+                getchar();
+                if(answer == 'n'){
+                    break;
+                }
+                else{
+                    answer = 'y';
+                }
+            }while(answer == 'y');
+            printf("\nThe Numbers :");
+            for(int t = 0;t < 10;t++){
+                printf("%c",t1[t]);
+            }
+            printf("\n\n");
+            printf("The Numbers :");
+            for(int r = 0;r < 10;r++){
+                printf("%c",t2[r]);
+            }
+            printf("\n");
     
     
 }
