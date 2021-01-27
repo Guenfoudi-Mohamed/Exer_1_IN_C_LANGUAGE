@@ -6,7 +6,7 @@ main()
 //block
 {
 
-    
+                                                                                    //EX_1
     int days;
     float salary_tax,tax,price_of_hour,num_hour,one_day,salary_pure;
     #define tva 2.5
@@ -56,38 +56,46 @@ main()
     }
 
 
-                                                                        //==== exercice_2
+                                                                        //EX_2
 
-    /*int num_1,num_2;char Operator;
+
+    int num_1,num_2;char operation;
     printf("Welcome Dear\nPlease Enter number one : ");
-    scanf("%d",&num_1);
-    printf("Please Enter number two : ");
-    scanf("%d",&num_2);
-    printf("chois any operator\n1 __ '+'\n2 __ '-'\n3 __ '*'\n4 __ '/'\n5 __ 'modulaunt'\nChoose pls : ");
-    scanf("%c",&Operator);
-    if(Operator == '1' || Operator == '+'){
+    scanf(" %d",&num_1);
+    printf("Please Enter number two : %c",operation);
+    scanf(" %d",&num_2);
+    printf("chois any operator\n1 __ '+'\n2 __ '-'\n3 __ '*'\n4 __ '/'\n5 __ '%s'\nChoose pls : ","%");
+    getchar();                                                                                              //Urgent function in the system
+    scanf(" %c",&operation);
+    if(operation == '1' || operation == '+'){
         printf("Result is : %d\n",num_1+num_2);
     }
-    else if(Operator == '2' || Operator == '-'){
+    else if(operation == '2' || operation == '-'){
         printf("Result is : %d\n",num_1-num_2);
     }
-    else if(Operator == '3' || Operator == '*'){
+    else if(operation == '3' || operation == '*'){
         printf("Result is : %d\n",num_1*num_2);
     }
-    else if(Operator == '4' || Operator == '/'){
+    else if(operation == '4' || operation == '/'){
         printf("Result is : %d\n",num_1/num_2);
     }
-    else if(Operator == '5' || Operator == '%'){
+    else if(operation == '5' || operation == '%'){
         if(num_1 < num_2){
             printf("Please You must enter the first number greater than the second\nnumber one please :");
-            scanf("%d",&num_1);
+            scanf(" %d",&num_1);
             printf("number two please :");
-            scanf("%d",&num_2);
+            scanf(" %d",&num_2);
             printf("Result is : %d\n",num_1%num_2);
         }else{
-            printf("Result is : %d\n",num_1/num_2);
+            printf("Result is : %d\n",num_1%num_2);
         }
     }
-
-
+    else{
+        printf("\nERROR >> operation not correct\n");
+    }
+    
+    
+    
+    
+    
 }
