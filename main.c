@@ -144,13 +144,16 @@ main()
             char answer  = 'y';
             float t1[5],t2[5];
             int i = 0,length = 4;
-            printf("Hello Dear ;\n");
+            printf("Hello Dear ;\nPlease Enter 5 times, \n");
             while(answer != 'n'){
                 printf("Please Enter a Number : ");
                 scanf("%f",&numbers);
                 getchar();
                 t1[i]=numbers;
                 i++;
+                if(i == 5){
+                        break;
+                }
                 printf("do you want to continue ? Y/N : ");
                 scanf("%c",&answer);
                 getchar();
@@ -160,6 +163,7 @@ main()
                 else{
                     answer == 'y';
                 }
+
             }
             printf("your numbers are : \n");
             for(i = 0;i <= length ;i++){
