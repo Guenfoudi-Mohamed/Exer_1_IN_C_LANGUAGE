@@ -6,7 +6,7 @@ main()
 //block
 {
 
-                                                                                    //EX_1
+                                                                                                   //EX_1
     int days;
     float salary_tax,tax,price_of_hour,num_hour,one_day,salary_pure;
     #define tva 2.5
@@ -56,7 +56,7 @@ main()
     }
 
 
-                                                                        //EX_2
+                                                                                                   //EX_2
 
 
     int num_1,num_2;char operation;
@@ -95,7 +95,7 @@ main()
     }
     
     
-                                                                          //EX_3
+                                                                                                   //EX_3
 
 
             char num_char;
@@ -135,6 +135,47 @@ main()
                 printf("%c",t2[r]);
             }
             printf("\n");
+  
+  
+  
+                                                                                                   //EX_4
+
+            float numbers;
+            char answer  = 'y';
+            float t1[5],t2[5];
+            int i = 0,length = 4;
+            printf("Hello Dear ;\n");
+            while(answer != 'n'){
+                printf("Please Enter a Number : ");
+                scanf("%f",&numbers);
+                getchar();
+                t1[i]=numbers;
+                i++;
+                printf("do you want to continue ? Y/N : ");
+                scanf("%c",&answer);
+                getchar();
+                if(answer == 'n' || answer == 'N'){
+                    break;
+                }
+                else{
+                    answer == 'y';
+                }
+            }
+            printf("your numbers are : \n");
+            for(i = 0;i <= length ;i++){
+                printf("\n %.1f ",t1[i]);
+            }
+            i = 0;
+            for(int j = length;j >= 0;j--){
+                t2[i] = t1[j];
+                i++;
+            }
+            printf("\n\ntable Two reverse is : \n");
+            i= 0;
+            for(i = 0;i <= length ; i++){
+                printf("\n %.1f ",t2[i]);
+            }
+            printf("\n\n\n");
     
     
 }
